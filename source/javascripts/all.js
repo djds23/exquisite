@@ -3,7 +3,7 @@ function humanize(text) {
     .toLowerCase()
     .replace(/[_-]/g, ' ');
   var firstLetter = cleanText[0].toUpperCase();
-  return firstLetter + cleanText.slice(1, -1);
+  return firstLetter + cleanText.slice(1);
     //.replace(/(?:^|\s)\S/g, function(firstLetter) {
     //  return firstLetter.toUpperCase();
     // });
